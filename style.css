@@ -1,0 +1,147 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+/*===================== HEADER =======================*/
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-image: url(images/wood-bg.png);
+    background-repeat: repeat-x;
+}
+
+#header img {
+    display: block;     /*this means we will be able to adjust height and width of this image*/
+    margin: auto;       /*Clever way to centrelize an image on the screen*/
+    height: 70%;        /*the image will be 70 of the herightt of the header*/
+    padding-top: 15px;  /*centrelizing vertically*/
+}
+
+/*===================== TOP-TABS =======================*/
+#tabs-top {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+}
+
+#tabs-top a {
+    float: left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+/*===================== MAIN-HOME =======================*/
+#main-home {
+    margin-top: 120px;      /*Leave a space of 80px + 40Px = 120px till the top of the main-home section*/
+}
+
+
+/*===================== BOTTOM-TABS =======================*/
+#tabs-bottom {
+    position: fixed;
+    bottom: 0;                  /*will be stuck in the bottom of the screen*/
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: forestgreen;
+}
+
+#tabs-bottom a {
+    float: left;
+    display: block;
+    width: 50%;                 /*sice there are only two tabs at the bottom*/
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+/*===================== MAIN =======================*/
+#main {
+    margin-top: 119px;                                  /*Keeping the main from being hidden*/
+    background: url(images/map-blur.png);               /*the background is going to be an image*/
+    width: 100%;
+    background-repeat: repeat-x;                        /*the image will keep repeating itself horizontally (y-axis)*/
+}
+
+#content {
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+/*===================== INFO BOX =======================*/
+
+a.info-box {                                            /*any hyperlink <a> with the classname info-box will have the following styling*/
+    text-decoration: none;
+    background: rgba(255, 255, 255, .8);              /*the .8 is the trasparencey value*/
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;                                    /*this is the gap between the info boxes*/
+    padding: 1px;
+}
+
+.info-box img {
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box h3 {
+    padding: 0;
+    margin-bottom: 0;
+    width: 90%;
+    color: #572800;
+}
+
+.info-box p {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box img.right {                       /*every img inside info box that has "right" as classname gets this styling*/
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*===================== INFO BOX FULL =======================*/
+#info-box-full {
+    background-color: rgba(255, 255, 255, .8);                  /*the rgba allows trasparency with the last variable*/
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+#info-box-full img {
+    width: 100%;                                                  /*this line makes sure that the image never bleeds out of info box*/
+}
+
+#info-box-full h3 {
+    text-align: center;
+}
