@@ -145,3 +145,26 @@ a.info-box {                                            /*any hyperlink <a> with
 #info-box-full h3 {
     text-align: center;
 }
+
+/*===================== WEATHER =======================*/
+img.info-box-weather-icon {
+    width: 30px !important;             /*important is used to override the default height and width of the image*/
+    height: 30px;            
+    margin: 10px;
+    float: left;                        /*float left means that the image will be on the left side of the text*/
+}
+
+h1.info-box-weather-icon {
+    font-size: 65px;                     /*this is the size of the temperature number*/
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    border-top: 1px solid #131313;          /*this is the border of the table*/
+}
