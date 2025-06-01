@@ -168,3 +168,32 @@ table {
 td {
     border-top: 1px solid #131313;          /*this is the border of the table*/
 }
+
+/*===================== Feedback Form =======================*/
+input {
+    width: 100%;
+    height: 25px;
+    margin: 12px 0;                            /*12px margin on top and bottom, 0 on left and right*/
+    border: 1px solid #929292;               /*this is the border of the input field*/
+}
+
+textarea {
+    width: 100%;
+    height: 65px;
+    margin: 12px 0;                            /*12px margin on top and bottom, 0 on left and right*/
+    border: 1px solid #929292;               /*this is the border of the textarea field*/
+}
+.button {
+    display: block;                            /*this will make the button a block element*/
+    width: 100%;
+    text-decoration: none;                     /*this will remove the underline from the button text*/
+    text-align: center;                        /*this will center the text inside the button*/
+    font-size: 16px;
+    padding: 8px 0;                            /*8px padding on top and bottom, 0 on left and right*/
+    margin: 12px 0;                            /*12px margin on top and bottom, 0 on left and right*/
+    background-color: forestgreen;           /*the color of the button*/
+    color: white;                            /*the text color of the button*/
+    font-weight: 700;
+    border: none;                              /*no border for the button*/
+    cursor: pointer;                           /*this will change the cursor to a pointer when hovering over the button*/
+}
